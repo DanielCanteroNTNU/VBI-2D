@@ -101,6 +101,7 @@ elseif Calc.Proc.code == 3
     [Calc,Sol] = B50_ContactForce(Calc,Veh,Beam,Sol);
     
 end % if Calc.Proc.code == 1
+fprintf('\b'); disp('  DONE');
 
 % ---- Load effects ----
 % Bending Moment
