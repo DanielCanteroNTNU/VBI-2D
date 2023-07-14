@@ -7,7 +7,7 @@
 % *** For help, modifications, and collaboration contact the author.    ***
 % *************************************************************************
 
-clear; clc;
+clear; clc; close all
 addpath 'Functions';
 
 % --------------------------- Definitions ---------------------------------
