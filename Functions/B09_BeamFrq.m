@@ -70,7 +70,7 @@ if myIsfield(Calc.Plot,{'P1_Beam_frq'},1)
 end % if myIsfield(Calc.Plot,{'P1_Beam_frq'},1)
 
 % -- Plotting Mode shapes --
-if myIsfield(Calc.Plot,{'P2_Beam_modes'},1)
+if myIsfield(Calc.Plot,{'P2_Beam_modes'})
     if Calc.Plot.P2_Beam_modes > 0
         aux1 = ceil(Calc.Plot.P2_Beam_modes/2);
         figure; 
@@ -90,6 +90,6 @@ if myIsfield(Calc.Plot,{'P2_Beam_modes'},1)
         end % for k = 1:Calc.Plot.P2_Beam_modes
         drawnow;
     end % if Calc.Plot.P2_Beam_modes > 0
-end % if myIsfield(Calc.Plot,{'P2_Beam_modes'},1)
+end % if myIsfield(Calc.Plot,{'P2_Beam_modes'})
 
 % ---- End of function ----
