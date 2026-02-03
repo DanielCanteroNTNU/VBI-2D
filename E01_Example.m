@@ -152,7 +152,7 @@ Calc.Plot.P20_Beam_MidSpan_BM = 1;         % Static and Dynamic BM at mid-span
 %Calc.Plot.P27_Veh_A = 1;                   % Time histories of vehicle accelerations
 
 % Small modification to reproduce the exact random state used in the generation of Figure 6
-for i = 1:18; rand; end
+for i = 1:18; x = rand; end; clear i x;
 
 % -------------------------------------------------------------------------
 % ------------------------- Calculations ----------------------------------
@@ -230,4 +230,5 @@ figure; hold on; box on;
     %legend('Dynamic','Static'); 
     axis tight;
     
+
 % ---- End of script ----    
