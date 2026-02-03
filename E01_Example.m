@@ -180,7 +180,7 @@ plot([1,1]*Beam.Prop.Lb,ylim,'k--');
 xlabel('X-coordinate (m)');
 ylabel('Time (s)');
 title('Vehicle(s) position in time')
-drawnow;
+drawnow; clear h1 h4 veh_num;
 
 %% Tractor vertical accelerations
 % veh_num = 1;
@@ -192,7 +192,7 @@ drawnow;
 veh_num = 2;
 figure; 
     plot(Calc.Solver.t,Sol.Veh(veh_num).A(1,:));
-    axis tight;
+    axis tight; clear veh_num;
     xlabel('Time (s)');
     ylabel('Acc. (m/s^2)');
 
@@ -232,3 +232,4 @@ figure; hold on; box on;
     
 
 % ---- End of script ----    
+
