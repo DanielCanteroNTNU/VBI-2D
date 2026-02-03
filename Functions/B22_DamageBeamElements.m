@@ -110,11 +110,13 @@ elseif Beam.Damage.type == 4
     % Graphical check
     if Beam.Damage.Plot.on == 1
         figure; 
-            plot(x,x_factor,'.-'); axis tight; 
+            plot(x,x_factor,'.-'); axis tight;
+            ylim(ylim.*[0,1]);
             xlabel('Distance'); ylabel('Factor for damage'); 
             title('Spatial variation for for E');
     end % if Beam.Damage.Plot.on == 1
 
 end % if Beam.Damage.ype == 1
+
 
 % ---- End of script ----
